@@ -1,0 +1,36 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+:root{
+  --box-width: 20px;
+  --box-height: 20px;
+}
+body{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black
+}
+
+#game-board{
+  background-color:honeydew;
+  height: 100vmin; /* will help to create sqaure shape box always */
+  width: 100vmin;  /* will help to create sqaure shape box always */
+  display: grid;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(21, 1fr);
+}
+
+.snake{
+  border: .25vmin solid black;
+  background-color: skyblue;
+}
+
+.food{
+  border: .25vmin solid black;
+  background-color: yellowgreen;
+}
