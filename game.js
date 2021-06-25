@@ -10,7 +10,7 @@ function main(currentTime) {
 
   if (gameOver) {
     if (confirm('Game Over! Press ok to restart.')) {
-      window.location = '/'
+      window.location = '/snakeGame'
     }
     return
   }
